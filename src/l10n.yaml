@@ -1,0 +1,17 @@
+en:
+  extension.light.name: Light
+  extension.light.led: set PIN [PIN] LED [STATE]
+  extension.light.led.off: off
+  extension.light.led.on: on
+  extension.light.ledToggle: toggle PIN [PIN] LED state
+  extension.light.ledIsOn: PIN [PIN] LED is on?
+  extension.light.brightness: PIN [PIN] ambient light brightness
+
+zh-Hans:
+  extension.light.name: 光
+  extension.light.led: 将引脚 [PIN] LED 灯 [STATE]
+  extension.light.led.off: 关闭
+  extension.light.led.on: 开启
+  extension.light.ledToggle: 切换引脚 [PIN] LED 灯状态
+  extension.light.ledIsOn: 引脚 [PIN] LED 灯开启？
+  extension.light.brightness: 引脚 [PIN] 环境光亮度
