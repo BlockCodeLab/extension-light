@@ -30,7 +30,7 @@ export default {
       inputs: {
         PIN: {
           type: 'number',
-          default: 7,
+          default: 1,
         },
         STATE: {
           inputMode: true,
@@ -77,7 +77,7 @@ export default {
       inputs: {
         PIN: {
           type: 'number',
-          default: 7,
+          default: 1,
         },
       },
       python(block) {
@@ -102,7 +102,7 @@ export default {
       inputs: {
         PIN: {
           type: 'number',
-          default: 7,
+          default: 1,
         },
       },
       output: 'boolean',
@@ -125,7 +125,7 @@ export default {
       inputs: {
         PIN: {
           type: 'number',
-          default: 2,
+          default: 1,
         },
       },
       output: 'number',
