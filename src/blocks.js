@@ -35,21 +35,21 @@ export default {
         STATE: {
           inputMode: true,
           type: 'string',
-          default: 'on',
+          default: '1',
           menu: [
             [
               <Text
                 id="extension.light.led.on"
                 defaultMessage="on"
               />,
-              'on',
+              '1',
             ],
             [
               <Text
                 id="extension.light.led.off"
                 defaultMessage="off"
               />,
-              'off',
+              '0',
             ],
           ],
         },
@@ -61,8 +61,8 @@ export default {
           code += this.injectId(this.STATEMENT_PREFIX, block);
         }
         const pinCode = this.valueToCode(block, 'PIN', this.ORDER_NONE) || '7';
-        const stateCode = this.valueToCode(block, 'STATE', this.ORDER_NONE) || '"on"';
-        code += `light.set_led(num(${pinCode}), str(${stateCode}))\n`;
+        const stateCode = this.valueToCode(block, 'STATE', this.ORDER_NONE) || '1';
+        code += `light.set_led(num(${pinCode}), num(${stateCode}))\n`;
         return code;
       },
     },
